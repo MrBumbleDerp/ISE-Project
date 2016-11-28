@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1>Rent a bike</h1>
-                <p class="lead">Please select a bike</p>
+                <p class="lead">Please select a language</p>
             </div>
         </div>
         <div class="row center mar-bot2">

@@ -1,4 +1,41 @@
 <?php include('../../php/head.php'); ?>
+<?php
+  // all variables for the user form must be initialized empty in order to use the empty() method
+  $Firstname = "";
+  $Lastname = "";
+  $Emailadress = "";
+  $Dateofbirth = "";
+  $Address = "";
+  $Town = "";
+  $Zipcode = "";
+  $Creditcard = "";
+  $Phonenumber = "";
+
+  if (isset($_POST['Submitbutton'])) // if the user presses 'Submit':
+  {
+
+    // insert all values with the ones from the form:
+    $Firstname = $_POST['Firstname'];
+    $Lastname = $_POST['Lastname'];
+    $Emailadress = $_POST['Emailadress'];
+    $Dateofbirth = $_POST['Dateofbirth'];
+    $Address = $_POST['Address'];
+    $Town = $_POST['Town'];
+    $Zipcode = $_POST['Zipcode'];
+    $Creditcard = $_POST['Creditcard'];
+    $Phonenumber = $_POST['Phonenumber'];
+
+    // Check if values are left empty by user:
+    if(empty($Firstname) || empty($Lastname) || empty($Emailadress) || empty($Dateofbirth) || empty($Address) || empty($Town) || empty($Zipcode) || empty($Creditcard) || empty($Phonenumber))
+    {
+      echo'<div class="alert alert-danger center min-width content-center" role="alert">Uh oh! You have entered an invalid email-adress. Please try again.</div>';
+    }
+    else { // if all goes well: go to success-page
+      header('location: successregister.php');
+    }
+  }
+
+ ?>
     <!-- Page Content -->
     <div class="container full-page min-width">
 
@@ -11,68 +48,52 @@
               </div>
           </div>
 
-        <div class="content-center">
+        <form class="content-center form-inline" method="post">
           <div class="pad-left">
           <div class="row col-md-12">
-            <form class="form-inline">
               <div class="form-group">
-                <label class="sr-only" for="exampleInputEmail3">First name</label>
-                <input type="text" class="form-control" id="Firstname" placeholder="First name">
+                <input type="text" class="form-control" name="Firstname" placeholder="First name">
               </div>
               <div class="form-group">
-                <label class="sr-only" for="exampleInputPassword3">Last name</label>
-                <input type="text" class="form-control" id="Lastname" placeholder="Last name">
+                <input type="text" class="form-control" name="Lastname" placeholder="Last name">
               </div>
-            </form>
             </div>
 
             <div class="row col-md-12 mar-top">
-              <form class="form-inline">
                 <div class="form-group">
-                  <label class="sr-only" for="exampleInputPassword3">Last name</label>
-                  <input type="text" class="form-control" id="Emailadress" placeholder="Email-adress">
+                  <input type="text" class="form-control" name="Emailadress" placeholder="Email-adress">
                 </div>
               <div class="form-group">
-                <label class="sr-only" for="exampleInputEmail3">First name</label>
-                <input type="date" class="form-control" placeholder="Date of birth">
+                <input type="date" class="form-control" name="Dateofbirth" placeholder="Date of birth">
               </div>
-              </form>
               </div>
 
               <div class="row col-md-12 mar-top">
-                <form class="form-inline">
                   <div class="form-group">
-                    <label class="sr-only" for="exampleInputEmail3">First name</label>
-                    <input type="text" class="form-control" id="Address" placeholder="Address">
+                    <input type="text" class="form-control" name="Address" placeholder="Address">
                   </div>
                   <div class="form-group">
-                    <label class="sr-only" for="exampleInputPassword3">Last name</label>
-                    <input type="text" class="form-control" id="Town" placeholder="Town">
+                    <input type="text" class="form-control" name="Town" placeholder="Town">
                   </div>
                   <div class="form-group mar-top">
-                    <label class="sr-only" for="exampleInputEmail3">First name</label>
-                    <input type="text" class="form-control" id="Zipcode" placeholder="Zipcode">
+                    <input type="text" class="form-control" name="Zipcode" placeholder="Zipcode">
                   </div>
-                </form>
                 </div>
 
                 <div class="row col-md-12 mar-top">
-                  <form class="form-inline">
                     <div class="form-group">
-                      <label class="sr-only" for="exampleInputPassword3">Last name</label>
-                      <input type="text" class="form-control" id="Creditcard" placeholder="Creditcard">
+                      <input type="text" class="form-control" name="Creditcard" placeholder="Creditcard">
                     </div>
                     <div class="form-group">
-                      <label class="sr-only" for="exampleInputEmail3">First name</label>
-                      <input type="text" class="form-control" id="Phonenumber" placeholder="Phonenumber">
+                      <input type="text" class="form-control" name="Phonenumber" placeholder="Phonenumber">
                     </div>
-                  </form>
                   </div>
               </div>
                   <div class="row center">
-                    <a href="successregister.php"><button type="button" class="btn btn-primary mar-top mar-bot2 ">Submit</button></a>
+                    <input type="submit" name="Submitbutton" value="Submit" class="btn btn-primary mar-top mar-bot2">
                 </div>
-                        </div>
+              </div>
+            </form>
                 </div>
               </div>
 

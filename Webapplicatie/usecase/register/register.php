@@ -1,7 +1,8 @@
+<?php // TODO: GLOBAL VARIABLE FOR THE TYPE OF SUBSCRIPTION ?>
+
 <?php include('../../php/head.php'); ?>
     <!-- Page Content -->
     <div class="container full-page test pad-bot min-width">
-
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h1>Register</h1>
