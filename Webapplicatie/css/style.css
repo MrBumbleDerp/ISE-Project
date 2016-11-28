@@ -1,0 +1,52 @@
+body {
+  background-color: #efefef;
+}
+
+.center {
+ text-align: center;
+}
+
+.content-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mar-top {
+  margin-top: 10px;
+}
+
+.mar-bot {
+  margin-bottom: 10px;
+}
+
+.mar-bot2 {
+  margin-bottom: 20px;
+}
+
+.test {
+    background-color: white;
+}
+
+.test2 {
+  border-style: solid;
+}
+
+.min-width {
+  width: 40%;
+}
+
+.margin-fix {
+  margin-left: 20px;
+}
+
+.margin-fix2 {
+  margin-top: 20px;
+}
+
+.pad-left {
+  padding-left: 75px;
+}
+
+.pad-bot {
+  padding-bottom: 10px;
+}
