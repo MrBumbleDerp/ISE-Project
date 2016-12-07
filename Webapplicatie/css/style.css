@@ -50,3 +50,7 @@ body {
 .pad-bot {
   padding-bottom: 10px;
 }
+
+.float-right {
+  float: right;
+}

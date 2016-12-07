@@ -45,21 +45,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="#">Vélib'</a>
-              </div>
-              <!-- Collect the nav links, forms, and other content for toggling -->
-              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                  <ul class="nav navbar-nav">
-                      <li>
-                          <a href="../register/register.php">Registreren</a>
-                      </li>
-                      <li>
-                          <a href="../rentbike/chooselanguage.php">Fiets huren</a>
-                      </li>
-                      <li>
-                          <a href="../returnbike/returnbike.php">Fiets terugbrengen</a>
-                      </li>
-                  </ul>
+                  <a class="navbar-brand" href="index2.php">Vélib'</a>
               </div>
               <!-- /.navbar-collapse -->
           </div>

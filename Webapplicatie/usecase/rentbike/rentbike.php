@@ -11,7 +11,6 @@
         <div class="row center mar-bot2">
           <div class="btn-group" role="group" aria-label="...">
             <a href="choosebikenumber.php"><button type="button" class="btn btn-primary btn-lg">Rent a bike</button></a>
-            <a href="#"><button type="button" class="btn btn-info btn-lg">Balance</button></a>
           </div>
       </div>
     </div>
