@@ -13,7 +13,7 @@
         <div class="row center mar-bot2">
           <input class="form-control input-lg min-width center content-center mar-bot2" type="text">
           <div class="btn-group" role="group" aria-label="...">
-            <a href="rentsuccess.html"><button type="button" class="btn btn-default btn-lg">Unlock</button></a>
+            <a href="rentsuccess.php"><button type="button" class="btn btn-default btn-lg">Unlock</button></a>
           </div>
       </div>
       </div>

@@ -33,7 +33,7 @@
   </head>
 
   <body>
-
+    <?php include('dbconnect.php') ?>
       <!-- Navigation -->
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
           <div class="container">
@@ -45,7 +45,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="index2.php">Vélib'</a>
+                  <a class="navbar-brand" href="../home/index2.php">Vélib'</a>
               </div>
               <!-- /.navbar-collapse -->
           </div>

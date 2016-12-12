@@ -10,7 +10,7 @@
         </div>
         <div class="row center mar-bot2">
           <div class="btn-group" role="group" aria-label="...">
-            <a href="../home/index.php"><button type="button" class="btn btn-primary btn-lg">Back to home</button></a>
+            <a href="../home/index2.php"><button type="button" class="btn btn-primary btn-lg">Back to home</button></a>
           </div>
       </div>
     </div>

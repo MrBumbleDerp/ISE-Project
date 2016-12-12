@@ -11,7 +11,7 @@
         </div>
 
         <div class="row center">
-          <a href="../home/index.php"><button type="button" class="btn btn-primary mar-top mar-bot2 ">Go Back</button></a>
+          <a href="../home/index2.php"><button type="button" class="btn btn-primary mar-top mar-bot2 ">Go Back</button></a>
       </div>
 
       <?php include('../../php/foot.php') ?>
