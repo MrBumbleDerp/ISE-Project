@@ -1,5 +1,5 @@
 <?php
-$serverName = "BERT\SQLEXPRESS";
+$serverName = "DESKTOP-JJ1CFB7";
 $connectionInfo = array("Database"=>"VelibDB", "UID"=>"sa", "PWD"=>"password");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
 

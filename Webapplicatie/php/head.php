@@ -33,7 +33,8 @@
   </head>
 
   <body>
-    <?php include('dbconnect.php') ?>
+    <?php session_start();
+    include('dbconnect.php') ?>
       <!-- Navigation -->
       <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
           <div class="container">
