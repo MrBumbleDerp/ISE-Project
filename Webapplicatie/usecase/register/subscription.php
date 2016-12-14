@@ -46,9 +46,9 @@
       echo'<div class="alert alert-danger center min-width content-center" role="alert">Uh oh! You have entered an invalid email-adress. Please try again.</div>';
     }
     else { // if all goes well: go to success-page
-      sqlsrv_query($conn, "INSERT INTO [USER] (userId, subscriptionId, FirstName, LastName, email, password, dateOfBirth, zipcode, address, town, Creditcard,
+      sqlsrv_query($conn, "INSERT INTO [USER] (subscriptionId, FirstName, LastName, email, password, dateOfBirth, zipcode, address, town, Creditcard,
         phoneNumber, vPoints, discount, subscriptionStart, subscriptionRefresh, prepaidCard)
-      VALUES ('1', '1', '$Firstname', '$Lastname', '$Emailadress', '$password', '$Dateofbirth', '$Zipcode', '$Address', '$Town', '$Creditcard',
+      VALUES (1, '$Firstname', '$Lastname', '$Emailadress', '$password', '$Dateofbirth', '$Zipcode', '$Address', '$Town', '$Creditcard',
         '$Phonenumber', 1, 1, '$DateOfBirth', 1, 1") or die( print_r( sqlsrv_errors(), true));
       header('location: successregister.php');
     }
